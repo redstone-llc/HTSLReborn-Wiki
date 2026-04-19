@@ -4,13 +4,13 @@
 
 This would apply a layout
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | name | String | The name of the inventory layout |
 
-#### Syntax
+**Syntax**
 
 ```
 applyLayout <name>
@@ -24,7 +24,7 @@ applyLayout <name>
 
 **Keyword:** `applyPotion`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
@@ -34,7 +34,7 @@ applyLayout <name>
 | override | Boolean | Whether to override an existing effect of the same type |
 | hide_particles | Boolean | Whether to hide particle effects produced by the effect |
 
-#### Syntax
+**Syntax**
 
 ```
 applyPotion <effect> <duration> <level> <override> <hide_particles>
@@ -48,7 +48,7 @@ applyPotion <effect> <duration> <level> <override> <hide_particles>
 
 **Keyword:** `balanceTeam`
 
-#### Syntax
+**Syntax**
 
 ```
 balanceTeam
@@ -64,7 +64,7 @@ balanceTeam
 
 Cancels an event.
 
-#### Syntax
+**Syntax**
 
 ```
 cancelEvent
@@ -78,7 +78,7 @@ cancelEvent
 
 **Keyword:** `globalvar`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
@@ -87,7 +87,7 @@ cancelEvent
 | amount | Integer | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
-#### Syntax
+**Syntax**
 
 ```
 globalvar <identifier> <operation> <amount> <unset>
@@ -101,14 +101,14 @@ globalvar <identifier> <operation> <amount> <unset>
 
 **Keyword:** `changeHealth`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
 | amount | Integer | The amount to manipulate the player's health by |
 
-#### Syntax
+**Syntax**
 
 ```
 changeHealth <operation> <amount>
@@ -122,14 +122,14 @@ changeHealth <operation> <amount>
 
 **Keyword:** `hungerLevel`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
 | amount | Integer | The amount to manipulate the player's hunger by |
 
-#### Syntax
+**Syntax**
 
 ```
 hungerLevel <operation> <amount>
@@ -142,14 +142,14 @@ hungerLevel <operation> <amount>
 
 **Keyword:** `maxHealth`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
 | amount | Integer | The amount to manipulate the player's maximum health by |
 
-#### Syntax
+**Syntax**
 
 ```
 maxHealth <operation> <amount>
@@ -163,14 +163,14 @@ maxHealth <operation> <amount>
 
 **Keyword:** `changePlayerGroup`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | The group to apply to the player |
 | demotion_protection | Boolean | Prevent this action from demoting a player with a higher group priority |
 
-#### Syntax
+**Syntax**
 
 ```
 changePlayerGroup <identifier> <demotion_protection>
@@ -184,7 +184,7 @@ changePlayerGroup <identifier> <demotion_protection>
 
 **Keyword:** `var`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
@@ -193,7 +193,7 @@ changePlayerGroup <identifier> <demotion_protection>
 | amount | Integer | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
-#### Syntax
+**Syntax**
 
 ```
 var <identifier> <operation> <amount> <unset>
@@ -207,7 +207,7 @@ var <identifier> <operation> <amount> <unset>
 
 **Keyword:** `teamVar`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
@@ -217,7 +217,7 @@ var <identifier> <operation> <amount> <unset>
 | amount | Integer | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
-#### Syntax
+**Syntax**
 
 ```
 teamvar <identifier> <team> <operation> <amount> <unset>
@@ -231,7 +231,7 @@ teamvar <identifier> <team> <operation> <amount> <unset>
 
 **Keyword:** `clearEffects`
 
-#### Syntax
+**Syntax**
 
 ```
 clearEffects
@@ -245,7 +245,7 @@ clearEffects
 
 **Keyword:** `closeMenu`
 
-#### Syntax
+**Syntax**
 
 ```
 closeMenu
@@ -259,13 +259,13 @@ closeMenu
 
 **Keyword:** `actionBar`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | message | String | The message to send in the action bar |
 
-#### Syntax
+**Syntax**
 
 ```
 actionBar <message>
@@ -279,13 +279,13 @@ actionBar <message>
 
 **Keyword:** `displayMenu`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | The name/title of the menu |
 
-#### Syntax
+**Syntax**
 
 ```
 displayMenu <identifier>
@@ -299,13 +299,13 @@ displayMenu <identifier>
 
 **Keyword:** `title`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | message | String | The message to send in a title |
 
-#### Syntax
+**Syntax**
 
 ```
 title <message>
@@ -319,14 +319,14 @@ title <message>
 
 **Keyword:** `enchant`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | effect | String | The message to send in a title |
 | level | Integer | The level of the enchantment |
 
-#### Syntax
+**Syntax**
 
 ```
 enchant <effect> <level>
@@ -340,7 +340,7 @@ enchant <effect> <level>
 
 **Keyword:** `exit`
 
-#### Syntax
+**Syntax**
 
 ```
 exit
@@ -354,13 +354,13 @@ exit
 
 **Keyword:** `failParkour`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | reason | String | The message to send in the parkour failed message |
 
-#### Syntax
+**Syntax**
 
 ```
 failParkour <reason>
@@ -374,7 +374,7 @@ failParkour <reason>
 
 **Keyword:** `fullHeal`
 
-#### Syntax
+**Syntax**
 
 ```
 fullHeal
