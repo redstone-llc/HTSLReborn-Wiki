@@ -27,7 +27,7 @@ blockType <item> <match_type_only>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operator | String/Operator | Comparison operator (==, <, <=, >, >=, etc.) |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Number | The damage value |
 
 **Syntax**
@@ -103,7 +103,7 @@ fishingEnv <environment>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | The global variable name |
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Value | Value to compare against |
 | fallback | Value | Default value if unset |
 
@@ -205,7 +205,7 @@ isSneaking
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Number | Health value |
 
 **Syntax**
@@ -227,7 +227,7 @@ maxHealth <operator> <value>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | placeholder | String | A placeholder |
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Number | Value to compare |
 
 **Syntax**
@@ -262,7 +262,7 @@ isFlying
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Number | Health value |
 
 **Syntax**
@@ -283,7 +283,7 @@ health <operator> <value>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Number | Hunger value |
 
 **Syntax**
@@ -305,7 +305,7 @@ hunger <operator> <value>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | Variable name |
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Value | Value to compare |
 | fallback | Value | Default value if unset |
 
@@ -444,7 +444,7 @@ hasTeam <team>
 | --------- | ---- | ------------|
 | identifier | String | Variable name |
 | team | String | Team name |
-| operator | String/Operator | Comparison operator |
+| operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
 | value | Value | Value to compare |
 | fallback | Value | Default value if unset |
 
