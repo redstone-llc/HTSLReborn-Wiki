@@ -259,7 +259,7 @@ closeMenu
 
 **Keyword:** `if`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
@@ -268,7 +268,7 @@ closeMenu
 | if_actions | Actions | A list of actions to execute if true, line separated |
 | else_actions | Actions | A list of actions to execute if false, line separated |
 
-#### Syntax
+**Syntax**
 
 ```
 if <mode> (<conditions>) {
@@ -543,13 +543,13 @@ sound <sound> <volume> <pitch> <location>
 
 **Keyword:** `random`
 
-#### Parameters
+**Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | actions | String | List of actions to choose from (line separated) |
 
-#### Syntax
+**Syntax**
 
 ```
 random {
