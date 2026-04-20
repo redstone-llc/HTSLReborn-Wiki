@@ -1,3 +1,7 @@
+## String
+
+A collection of characters. If the value includes a space, use quotes around the whole thing.
+
 ## Number
 
 A number. Can always be a whole number (suffix `W`, can sometimes be a decimal number (suffix `D`) depending on the action/parameter. 
@@ -6,9 +10,9 @@ A number. Can always be a whole number (suffix `W`, can sometimes be a decimal n
 
 Either a number or a string
 
-## Item
+## Item Path
 
-A path to an item's NBT file.
+A path to an item's NBT file. This is relative to the script file. Preferably surround in quotes, especially if it includes a space.
 
 ## Assignment Operator
 
