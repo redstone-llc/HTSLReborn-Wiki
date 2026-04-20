@@ -15,9 +15,11 @@
 blockType <item> <match_type_only>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Damage Amount
 
@@ -36,9 +38,11 @@ blockType <item> <match_type_only>
 damageAmount <operator> <value>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Damage Cause
 
@@ -56,9 +60,11 @@ damageAmount <operator> <value>
 damageCause <cause>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Doing Parkour
 
@@ -70,9 +76,11 @@ damageCause <cause>
 doingParkour
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Fishing Environment
 
@@ -90,9 +98,11 @@ doingParkour
 fishingEnv <environment>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Global Variable Requirement
 
@@ -113,9 +123,11 @@ fishingEnv <environment>
 globalvar <identifier> <operator> <value> <fallback>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Has Item
 
@@ -136,9 +148,11 @@ globalvar <identifier> <operator> <value> <fallback>
 hasItem <item> <mode> <slot> <amount>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Has Potion Effect
 
@@ -156,9 +170,11 @@ hasItem <item> <mode> <slot> <amount>
 hasPotion <effect>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Is Item
 
@@ -179,9 +195,11 @@ hasPotion <effect>
 isItem <item> <mode> <slot> <amount>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Is Sneaking
 
@@ -193,9 +211,11 @@ isItem <item> <mode> <slot> <amount>
 isSneaking
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Max Health Requirement
 
@@ -214,9 +234,11 @@ isSneaking
 maxHealth <operator> <value>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Placeholder Number Requirement
 
@@ -236,9 +258,11 @@ maxHealth <operator> <value>
 placeholder <placeholder> <operator> <value>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Player Flying
 
@@ -250,9 +274,11 @@ placeholder <placeholder> <operator> <value>
 isFlying
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Player Health
 
@@ -271,9 +297,11 @@ isFlying
 health <operator> <value>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Player Hunger
 
@@ -292,9 +320,11 @@ health <operator> <value>
 hunger <operator> <value>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Player Variable Requirement
 
@@ -315,9 +345,11 @@ hunger <operator> <value>
 var <identifier> <operator> <value> <fallback>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Portal Type
 
@@ -335,9 +367,11 @@ var <identifier> <operator> <value> <fallback>
 portal <type>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## PvP Enabled
 
@@ -349,9 +383,11 @@ portal <type>
 canPvp
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Required Gamemode
 
@@ -369,9 +405,11 @@ canPvp
 gamemode <mode>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Required Group
 
@@ -390,9 +428,11 @@ gamemode <mode>
 hasGroup <group> <include_higher>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Required Permission
 
@@ -410,9 +450,11 @@ hasGroup <group> <include_higher>
 hasPermission <permission>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Required Team
 
@@ -430,9 +472,11 @@ hasPermission <permission>
 hasTeam <team>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Team Variable Requirement
 
@@ -454,9 +498,11 @@ hasTeam <team>
 teamvar <identifier> <team> <operator> <value> <fallback>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Within Region
 
@@ -474,5 +520,8 @@ teamvar <identifier> <team> <operator> <value> <fallback>
 inRegion <region>
 ```
 
+<br>
 
 ***
+
+<br>

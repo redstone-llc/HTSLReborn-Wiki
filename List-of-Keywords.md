@@ -16,9 +16,11 @@ This would apply a layout
 applyLayout <name>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Apply Potion Effect
 
@@ -40,9 +42,11 @@ applyLayout <name>
 applyPotion <effect> <duration> <level> <override> <hide_particles>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Balance Player Team
 
@@ -54,9 +58,11 @@ applyPotion <effect> <duration> <level> <override> <hide_particles>
 balanceTeam
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Cancel Event
 
@@ -70,9 +76,11 @@ Cancels an event.
 cancelEvent
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Global Variable
 
@@ -93,9 +101,11 @@ cancelEvent
 globalvar <identifier> <operation> <amount> <unset>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change health
 
@@ -114,9 +124,11 @@ globalvar <identifier> <operation> <amount> <unset>
 changeHealth <operation> <amount>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Hunger Level
 
@@ -134,9 +146,11 @@ changeHealth <operation> <amount>
 ```
 hungerLevel <operation> <amount>
 ```
+<br>
 
 ***
 
+<br>
 
 ## Change Max Health
 
@@ -155,9 +169,11 @@ hungerLevel <operation> <amount>
 maxHealth <operation> <amount>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Player Group
 
@@ -176,9 +192,11 @@ maxHealth <operation> <amount>
 changePlayerGroup <identifier> <demotion_protection>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Player Variable
 
@@ -199,9 +217,11 @@ changePlayerGroup <identifier> <demotion_protection>
 var <identifier> <operation> <amount> <unset>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Team Variable
 
@@ -223,9 +243,11 @@ var <identifier> <operation> <amount> <unset>
 teamvar <identifier> <team> <operation> <amount> <unset>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Clear All Potion Effects
 
@@ -237,9 +259,11 @@ teamvar <identifier> <team> <operation> <amount> <unset>
 clearEffects
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Close Menu
 
@@ -251,9 +275,11 @@ clearEffects
 closeMenu
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Conditional
 
@@ -278,9 +304,11 @@ if <mode> (<conditions>) {
 }
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Display Action Bar
 
@@ -298,9 +326,11 @@ if <mode> (<conditions>) {
 actionBar <message>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Display Menu
 
@@ -318,9 +348,11 @@ actionBar <message>
 displayMenu <identifier>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Display Title
 
@@ -338,9 +370,11 @@ displayMenu <identifier>
 title <message>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Enchant Held Item
 
@@ -359,9 +393,11 @@ title <message>
 enchant <effect> <level>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Exit
 
@@ -373,9 +409,11 @@ enchant <effect> <level>
 exit
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Fail Parkour
 
@@ -393,9 +431,11 @@ exit
 failParkour <reason>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Full Heal
 
@@ -407,9 +447,11 @@ failParkour <reason>
 fullHeal
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Give Experience Levels
 
@@ -427,9 +469,11 @@ fullHeal
 xpLevel <amount>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Give Item
 
@@ -450,9 +494,11 @@ xpLevel <amount>
 giveItem <item> <allow_multiple> <slot> <replace>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Go to House Spawn
 
@@ -464,9 +510,11 @@ giveItem <item> <allow_multiple> <slot> <replace>
 houseSpawn
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Kill Player
 
@@ -478,9 +526,11 @@ houseSpawn
 kill
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Parkour Checkpoint
 
@@ -492,9 +542,11 @@ kill
 parkCheck
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Pause Execution
 
@@ -512,9 +564,11 @@ parkCheck
 pause <ticks>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Play Sound
 
@@ -535,9 +589,11 @@ pause <ticks>
 sound <sound> <volume> <pitch> <location>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Random Action
 
@@ -557,9 +613,11 @@ random {
 }
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Remove Item
 
@@ -577,9 +635,11 @@ random {
 removeItem <item>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Reset Inventory
 
@@ -591,9 +651,11 @@ removeItem <item>
 resetInventory
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Send Chat Message
 
@@ -611,9 +673,11 @@ resetInventory
 chat <message>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Send to Lobby
 
@@ -631,9 +695,11 @@ chat <message>
 lobby <lobby>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Set Compass Target
 
@@ -651,9 +717,11 @@ lobby <lobby>
 compassTarget <location>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Set Gamemode
 
@@ -671,9 +739,11 @@ compassTarget <location>
 gamemode <mode>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Set Player Team
 
@@ -691,9 +761,11 @@ gamemode <mode>
 setTeam <team>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Teleport Player
 
@@ -712,9 +784,11 @@ setTeam <team>
 tp <location> <safe>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Trigger Function
 
@@ -733,9 +807,11 @@ tp <location> <safe>
 function <name> <global>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Consume Held Item
 
@@ -747,9 +823,11 @@ function <name> <global>
 consumeItem
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Drop Item
 
@@ -772,9 +850,11 @@ consumeItem
 dropItem <item> <location> <natural> <no_merge> <prioritize_player> <fallback_inventory>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Change Velocity
 
@@ -794,9 +874,11 @@ dropItem <item> <location> <natural> <no_merge> <prioritize_player> <fallback_in
 changeVelocity <x> <y> <z>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Launch to Target
 
@@ -815,9 +897,11 @@ changeVelocity <x> <y> <z>
 launchTarget <location> <coordinates> <strength>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Set Player Weather
 
@@ -835,9 +919,11 @@ launchTarget <location> <coordinates> <strength>
 playerWeather <weather>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Set Player Time
 
@@ -855,9 +941,11 @@ playerWeather <weather>
 playerTime <time>
 ```
 
+<br>
 
 ***
 
+<br>
 
 ## Toggle Nametag Display
 
@@ -875,5 +963,8 @@ playerTime <time>
 displayNametag <visible>
 ```
 
+<br>
 
 ***
+
+<br>
