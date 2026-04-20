@@ -263,7 +263,7 @@ closeMenu
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| or | String/Boolean | `true` or `or` for OR mode, `false` or `and` or omitted for AND mode. |
+| mode | String | What logical mode to evaluate the condition on (`or` for OR mode, `and` or omitted for AND mode) |
 | conditions | String | A list of conditions, comma separated (optional) |
 | if_actions | Actions | A list of actions to execute if true, line separated |
 | else_actions | Actions | A list of actions to execute if false, line separated |
@@ -271,7 +271,7 @@ closeMenu
 #### Syntax
 
 ```
-if <or> (<conditions>) {
+if <mode> (<conditions>) {
     <if_actions>
 } else {
     <else_actions>
@@ -533,6 +533,28 @@ pause <ticks>
 
 ```
 sound <sound> <volume> <pitch> <location>
+```
+
+
+***
+
+
+## Random Action
+
+**Keyword:** `random`
+
+#### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| actions | String | List of actions to choose from (line separated) |
+
+#### Syntax
+
+```
+random {
+    <actions>
+}
 ```
 
 
