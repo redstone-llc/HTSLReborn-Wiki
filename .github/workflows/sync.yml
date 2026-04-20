@@ -1,0 +1,34 @@
+name: Sync HTSLReborn-Wiki & HTSLReborn.wiki
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - .github/workflows/*
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: main
+
+      - uses: actions/checkout@v6
+        with:
+          repository: redstone-llc/HTSLReborn.wiki
+          path: wiki
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - run: |
+          cd $GITHUB_WORKSPACE/wiki/
+          cp -r $GITHUB_WORKSPACE/main/* .
+          git add .
+          git commit -m "Sync HTSLReborn-Wiki & HTSLReborn.wiki"
+          git push -u origin master
