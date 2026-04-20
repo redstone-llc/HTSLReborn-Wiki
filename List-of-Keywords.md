@@ -83,7 +83,7 @@ cancelEvent
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | The name of the global variable |
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
@@ -105,7 +105,7 @@ globalvar <identifier> <operation> <amount> <unset>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate the player's health by |
 
 **Syntax**
@@ -126,7 +126,7 @@ changeHealth <operation> <amount>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate the player's hunger by |
 
 **Syntax**
@@ -146,7 +146,7 @@ hungerLevel <operation> <amount>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate the player's maximum health by |
 
 **Syntax**
@@ -189,7 +189,7 @@ changePlayerGroup <identifier> <demotion_protection>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | String | The name of the player variable |
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
@@ -213,7 +213,7 @@ var <identifier> <operation> <amount> <unset>
 | --------- | ---- | ------------|
 | identifier | String | The name of the team variable |
 | team | String | The name of the team |
-| operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
+| operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
@@ -527,7 +527,7 @@ pause <ticks>
 | sound | String | The sound to play |
 | volume | Float | The volume of the sound |
 | pitch | Float | The pitch of the sound |
-| location | String | The location where the sound plays |
+| location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location where the sound plays |
 
 **Syntax**
 
@@ -643,7 +643,7 @@ lobby <lobby>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+| location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The lotation to point the compass to (does not support yaw/pitch) |
 
 **Syntax**
 
@@ -703,7 +703,7 @@ setTeam <team>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+| location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to teleport the player to |
 | safe | Boolean | Prevent teleporting inside blocks |
 
 **Syntax**
@@ -760,7 +760,7 @@ consumeItem
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | item | String | Path to the item's NBT file |
-| location | String | The drop location |
+| location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to drop the item at (does not support yaw/pitch) |
 | natural | Boolean | Whether the drop is natural |
 | no_merge | Boolean | Prevent merging with other items |
 | prioritize_player | Boolean | Prioritize giving to player |
@@ -806,7 +806,7 @@ changeVelocity <x> <y> <z>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+| location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to launch the player to  |
 | strength | Float | Launch strength |
 
 **Syntax**
