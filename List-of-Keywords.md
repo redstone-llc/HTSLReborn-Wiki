@@ -31,8 +31,8 @@ applyLayout <name>
 | effect | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The type of effect to apply to the player |
 | duration | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | How long the effect should last, in seconds |
 | level | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amplifier of the effect |
-| override | Boolean | Whether to override an existing effect of the same type |
-| hide_particles | Boolean | Whether to hide particle effects produced by the effect |
+| override | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether to override an existing effect of the same type |
+| hide_particles | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether to hide particle effects produced by the effect |
 
 **Syntax**
 
@@ -85,7 +85,7 @@ cancelEvent
 | identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the global variable |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
-| unset | Boolean | Automatic unset |
+| unset | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Automatic unset |
 
 **Syntax**
 
@@ -168,7 +168,7 @@ maxHealth <operation> <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The group to apply to the player |
-| demotion_protection | Boolean | Prevent this action from demoting a player with a higher group priority |
+| demotion_protection | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Prevent this action from demoting a player with a higher group priority |
 
 **Syntax**
 
@@ -191,7 +191,7 @@ changePlayerGroup <identifier> <demotion_protection>
 | identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the player variable |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
-| unset | Boolean | Automatic unset |
+| unset | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Automatic unset |
 
 **Syntax**
 
@@ -215,7 +215,7 @@ var <identifier> <operation> <amount> <unset>
 | team | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the team |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
 | amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
-| unset | Boolean | Automatic unset |
+| unset | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Automatic unset |
 
 **Syntax**
 
@@ -265,8 +265,8 @@ closeMenu
 | --------- | ---- | ------------|
 | mode | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | What logical mode to evaluate the condition on (`or` for OR mode, `and` or omitted for AND mode) |
 | conditions | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | A list of conditions, comma separated (optional) |
-| if_actions | Actions | A list of actions to execute if true, line separated |
-| else_actions | Actions | A list of actions to execute if false, line separated |
+| if_actions | [Action](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#action) | A list of actions to execute if true, line separated |
+| else_actions | [Action](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#action) | A list of actions to execute if false, line separated |
 
 **Syntax**
 
@@ -440,9 +440,9 @@ xpLevel <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | item | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | Path to the item's NBT file |
-| allow_multiple | Boolean | Whether the player can receive multiple of the item |
+| allow_multiple | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether the player can receive multiple of the item |
 | slot | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The inventory slot to place the item in |
-| replace | Boolean | Whether to replace an existing item in the slot |
+| replace | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether to replace an existing item in the slot |
 
 **Syntax**
 
@@ -525,8 +525,8 @@ pause <ticks>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | sound | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The sound to play |
-| volume | Float | The volume of the sound |
-| pitch | Float | The pitch of the sound |
+| volume | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | The volume of the sound |
+| pitch | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | The pitch of the sound |
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location where the sound plays |
 
 **Syntax**
@@ -547,7 +547,7 @@ sound <sound> <volume> <pitch> <location>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| actions | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | List of actions to choose from (line separated) |
+| actions | [Action](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#action) | List of actions to choose from (line separated) |
 
 **Syntax**
 
@@ -704,7 +704,7 @@ setTeam <team>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to teleport the player to |
-| safe | Boolean | Prevent teleporting inside blocks |
+| safe | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Prevent teleporting inside blocks |
 
 **Syntax**
 
@@ -725,7 +725,7 @@ tp <location> <safe>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | name | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The function name |
-| global | Boolean | Whether to run for all players |
+| global | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether to run for all players |
 
 **Syntax**
 
@@ -761,10 +761,10 @@ consumeItem
 | --------- | ---- | ------------|
 | item | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | Path to the item's NBT file |
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to drop the item at (does not support yaw/pitch) |
-| natural | Boolean | Whether the drop is natural |
-| no_merge | Boolean | Prevent merging with other items |
-| prioritize_player | Boolean | Prioritize giving to player |
-| fallback_inventory | Boolean | Return to inventory if needed |
+| natural | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether the drop is natural |
+| no_merge | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Prevent merging with other items |
+| prioritize_player | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Prioritize giving to player |
+| fallback_inventory | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Return to inventory if needed |
 
 **Syntax**
 
@@ -807,7 +807,7 @@ changeVelocity <x> <y> <z>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to launch the player to  |
-| strength | Float | Launch strength |
+| strength | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Launch strength |
 
 **Syntax**
 
@@ -867,7 +867,7 @@ playerTime <time>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| visible | Boolean | Whether the nametag is visible |
+| visible | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether the nametag is visible |
 
 **Syntax**
 
