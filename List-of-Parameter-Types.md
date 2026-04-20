@@ -43,4 +43,4 @@ One of the following:
 * **House Spawn:** `house_spawn`
 * **Current Location:** `current_location`
 * **Invoker's Location:** `invokers_location`
-* **Custom Coordinates:** `custom_coordinates "x y z"`
+* **Custom Coordinates:** `custom_coordinates "<x> <y> <z> [pitch] [yaw]"`
