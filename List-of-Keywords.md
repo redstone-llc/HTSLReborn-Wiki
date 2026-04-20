@@ -8,7 +8,7 @@ This would apply a layout
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| name | String | The name of the inventory layout |
+| name | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the inventory layout |
 
 **Syntax**
 
@@ -28,9 +28,9 @@ applyLayout <name>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| effect | String | The type of effect to apply to the player |
-| duration | Integer | How long the effect should last, in seconds |
-| level | Integer | The amplifier of the effect |
+| effect | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The type of effect to apply to the player |
+| duration | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | How long the effect should last, in seconds |
+| level | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amplifier of the effect |
 | override | Boolean | Whether to override an existing effect of the same type |
 | hide_particles | Boolean | Whether to hide particle effects produced by the effect |
 
@@ -82,9 +82,9 @@ cancelEvent
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The name of the global variable |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the global variable |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -106,7 +106,7 @@ globalvar <identifier> <operation> <amount> <unset>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate the player's health by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate the player's health by |
 
 **Syntax**
 
@@ -127,7 +127,7 @@ changeHealth <operation> <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate the player's hunger by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate the player's hunger by |
 
 **Syntax**
 
@@ -147,7 +147,7 @@ hungerLevel <operation> <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate the player's maximum health by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate the player's maximum health by |
 
 **Syntax**
 
@@ -167,7 +167,7 @@ maxHealth <operation> <amount>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The group to apply to the player |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The group to apply to the player |
 | demotion_protection | Boolean | Prevent this action from demoting a player with a higher group priority |
 
 **Syntax**
@@ -188,9 +188,9 @@ changePlayerGroup <identifier> <demotion_protection>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The name of the player variable |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the player variable |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -211,10 +211,10 @@ var <identifier> <operation> <amount> <unset>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The name of the team variable |
-| team | String | The name of the team |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the team variable |
+| team | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name of the team |
 | operation | [Assignment Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#assignment-operator) | The method of manipulation |
-| amount | Number | The amount to manipulate by |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -263,8 +263,8 @@ closeMenu
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| mode | String | What logical mode to evaluate the condition on (`or` for OR mode, `and` or omitted for AND mode) |
-| conditions | String | A list of conditions, comma separated (optional) |
+| mode | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | What logical mode to evaluate the condition on (`or` for OR mode, `and` or omitted for AND mode) |
+| conditions | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | A list of conditions, comma separated (optional) |
 | if_actions | Actions | A list of actions to execute if true, line separated |
 | else_actions | Actions | A list of actions to execute if false, line separated |
 
@@ -290,7 +290,7 @@ if <mode> (<conditions>) {
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| message | String | The message to send in the action bar |
+| message | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The message to send in the action bar |
 
 **Syntax**
 
@@ -310,7 +310,7 @@ actionBar <message>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The name/title of the menu |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The name/title of the menu |
 
 **Syntax**
 
@@ -330,7 +330,7 @@ displayMenu <identifier>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| message | String | The message to send in a title |
+| message | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The message to send in a title |
 
 **Syntax**
 
@@ -350,8 +350,8 @@ title <message>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| effect | String | The message to send in a title |
-| level | Integer | The level of the enchantment |
+| effect | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The message to send in a title |
+| level | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The level of the enchantment |
 
 **Syntax**
 
@@ -385,7 +385,7 @@ exit
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| reason | String | The message to send in the parkour failed message |
+| reason | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The message to send in the parkour failed message |
 
 **Syntax**
 
@@ -419,7 +419,7 @@ fullHeal
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| amount | Integer | The number of XP levels to give the player |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The number of XP levels to give the player |
 
 **Syntax**
 
@@ -439,9 +439,9 @@ xpLevel <amount>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| item | String | Path to the item's NBT file |
+| item | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | Path to the item's NBT file |
 | allow_multiple | Boolean | Whether the player can receive multiple of the item |
-| slot | String | The inventory slot to place the item in |
+| slot | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The inventory slot to place the item in |
 | replace | Boolean | Whether to replace an existing item in the slot |
 
 **Syntax**
@@ -504,7 +504,7 @@ parkCheck
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| ticks | Integer | The number of ticks to pause execution |
+| ticks | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The number of ticks to pause execution |
 
 **Syntax**
 
@@ -524,7 +524,7 @@ pause <ticks>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| sound | String | The sound to play |
+| sound | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The sound to play |
 | volume | Float | The volume of the sound |
 | pitch | Float | The pitch of the sound |
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location where the sound plays |
@@ -547,7 +547,7 @@ sound <sound> <volume> <pitch> <location>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| actions | String | List of actions to choose from (line separated) |
+| actions | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | List of actions to choose from (line separated) |
 
 **Syntax**
 
@@ -569,7 +569,7 @@ random {
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| item | String | Path to the item's NBT file |
+| item | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | Path to the item's NBT file |
 
 **Syntax**
 
@@ -603,7 +603,7 @@ resetInventory
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| message | String | The message to send |
+| message | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The message to send |
 
 **Syntax**
 
@@ -623,7 +623,7 @@ chat <message>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| lobby | String | The lobby name |
+| lobby | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The lobby name |
 
 **Syntax**
 
@@ -663,7 +663,7 @@ compassTarget <location>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| mode | String | The gamemode to set |
+| mode | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The gamemode to set |
 
 **Syntax**
 
@@ -683,7 +683,7 @@ gamemode <mode>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| team | String | The team name |
+| team | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The team name |
 
 **Syntax**
 
@@ -724,7 +724,7 @@ tp <location> <safe>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| name | String | The function name |
+| name | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The function name |
 | global | Boolean | Whether to run for all players |
 
 **Syntax**
@@ -759,7 +759,7 @@ consumeItem
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| item | String | Path to the item's NBT file |
+| item | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | Path to the item's NBT file |
 | location | [Location](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#location) | The location to drop the item at (does not support yaw/pitch) |
 | natural | Boolean | Whether the drop is natural |
 | no_merge | Boolean | Prevent merging with other items |
@@ -784,9 +784,9 @@ dropItem <item> <location> <natural> <no_merge> <prioritize_player> <fallback_in
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| x | Number | Velocity on X axis |
-| y | Number | Velocity on Y axis |
-| z | Number | Velocity on Z axis |
+| x | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | Velocity on X axis |
+| y | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | Velocity on Y axis |
+| z | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | Velocity on Z axis |
 
 **Syntax**
 
@@ -827,7 +827,7 @@ launchTarget <location> <coordinates> <strength>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| weather | String | The weather type (`Sunny`, ...) |
+| weather | [String](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#string) | The weather type (`Sunny`, ...) |
 
 **Syntax**
 
@@ -847,7 +847,7 @@ playerWeather <weather>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| time | Integer | The time value |
+| time | [Number](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#number) | The time value |
 
 **Syntax**
 
