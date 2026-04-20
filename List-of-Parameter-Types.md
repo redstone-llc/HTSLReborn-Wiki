@@ -10,6 +10,14 @@ A number. Can always be a whole number (suffix `W`, can sometimes be a decimal n
 
 Either a number or a string
 
+## Boolean
+
+Either `true` or `false`
+
+## Action
+
+An HTSL action
+
 ## Item Path
 
 A path to an item's NBT file. This is relative to the script file. Preferably surround in quotes, especially if it includes a space.
