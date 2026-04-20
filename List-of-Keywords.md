@@ -84,7 +84,7 @@ cancelEvent
 | --------- | ---- | ------------|
 | identifier | String | The name of the global variable |
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate by |
+| amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -106,7 +106,7 @@ globalvar <identifier> <operation> <amount> <unset>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate the player's health by |
+| amount | Number | The amount to manipulate the player's health by |
 
 **Syntax**
 
@@ -127,7 +127,7 @@ changeHealth <operation> <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate the player's hunger by |
+| amount | Number | The amount to manipulate the player's hunger by |
 
 **Syntax**
 
@@ -147,7 +147,7 @@ hungerLevel <operation> <amount>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate the player's maximum health by |
+| amount | Number | The amount to manipulate the player's maximum health by |
 
 **Syntax**
 
@@ -190,7 +190,7 @@ changePlayerGroup <identifier> <demotion_protection>
 | --------- | ---- | ------------|
 | identifier | String | The name of the player variable |
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate by |
+| amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -214,7 +214,7 @@ var <identifier> <operation> <amount> <unset>
 | identifier | String | The name of the team variable |
 | team | String | The name of the team |
 | operation | String/Operator | The method of manipulation. Supports string-based descriptors like `increment` and operators like `+=` |
-| amount | Integer | The amount to manipulate by |
+| amount | Number | The amount to manipulate by |
 | unset | Boolean | Automatic unset |
 
 **Syntax**
@@ -378,6 +378,452 @@ failParkour <reason>
 
 ```
 fullHeal
+```
+
+
+***
+
+
+## Give Experience Levels
+
+**Keyword:** `xpLevel`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| amount | Integer | The number of XP levels to give the player |
+
+**Syntax**
+
+```
+xpLevel <amount>
+```
+
+
+***
+
+
+## Give Item
+
+**Keyword:** `giveItem`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| item | String | Path to the item's NBT file |
+| allow_multiple | Boolean | Whether the player can receive multiple of the item |
+| slot | String | The inventory slot to place the item in |
+| replace | Boolean | Whether to replace an existing item in the slot |
+
+**Syntax**
+
+```
+giveItem <item> <allow_multiple> <slot> <replace>
+```
+
+
+***
+
+
+## Go to House Spawn
+
+**Keyword:** `houseSpawn`
+
+**Syntax**
+
+```
+houseSpawn
+```
+
+
+***
+
+
+## Kill Player
+
+**Keyword:** `kill`
+
+**Syntax**
+
+```
+kill
+```
+
+
+***
+
+
+## Parkour Checkpoint
+
+**Keyword:** `parkCheck`
+
+**Syntax**
+
+```
+parkCheck
+```
+
+
+***
+
+
+## Pause Execution
+
+**Keyword:** `pause`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| ticks | Integer | The number of ticks to pause execution |
+
+**Syntax**
+
+```
+pause <ticks>
+```
+
+
+***
+
+
+## Play Sound
+
+**Keyword:** `sound`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| sound | String | The sound to play |
+| volume | Float | The volume of the sound |
+| pitch | Float | The pitch of the sound |
+| location | String | The location where the sound plays |
+
+**Syntax**
+
+```
+sound <sound> <volume> <pitch> <location>
+```
+
+
+***
+
+
+## Remove Item
+
+**Keyword:** `removeItem`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| item | String | Path to the item's NBT file |
+
+**Syntax**
+
+```
+removeItem <item>
+```
+
+
+***
+
+
+## Reset Inventory
+
+**Keyword:** `resetInventory`
+
+**Syntax**
+
+```
+resetInventory
+```
+
+
+***
+
+
+## Send Chat Message
+
+**Keyword:** `chat`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| message | String | The message to send |
+
+**Syntax**
+
+```
+chat <message>
+```
+
+
+***
+
+
+## Send to Lobby
+
+**Keyword:** `lobby`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| lobby | String | The lobby name |
+
+**Syntax**
+
+```
+lobby <lobby>
+```
+
+
+***
+
+
+## Set Compass Target
+
+**Keyword:** `compassTarget`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+
+**Syntax**
+
+```
+compassTarget <location>
+```
+
+
+***
+
+
+## Set Gamemode
+
+**Keyword:** `gamemode`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| mode | String | The gamemode to set |
+
+**Syntax**
+
+```
+gamemode <mode>
+```
+
+
+***
+
+
+## Set Player Team
+
+**Keyword:** `setTeam`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| team | String | The team name |
+
+**Syntax**
+
+```
+setTeam <team>
+```
+
+
+***
+
+
+## Teleport Player
+
+**Keyword:** `tp`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+| safe | Boolean | Prevent teleporting inside blocks |
+
+**Syntax**
+
+```
+tp <location> <safe>
+```
+
+
+***
+
+
+## Trigger Function
+
+**Keyword:** `function`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| name | String | The function name |
+| global | Boolean | Whether to run for all players |
+
+**Syntax**
+
+```
+function <name> <global>
+```
+
+
+***
+
+
+## Consume Held Item
+
+**Keyword:** `consumeItem`
+
+**Syntax**
+
+```
+consumeItem
+```
+
+
+***
+
+
+## Drop Item
+
+**Keyword:** `dropItem`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| item | String | Path to the item's NBT file |
+| location | String | The drop location |
+| natural | Boolean | Whether the drop is natural |
+| no_merge | Boolean | Prevent merging with other items |
+| prioritize_player | Boolean | Prioritize giving to player |
+| fallback_inventory | Boolean | Return to inventory if needed |
+
+**Syntax**
+
+```
+dropItem <item> <location> <natural> <no_merge> <prioritize_player> <fallback_inventory>
+```
+
+
+***
+
+
+## Change Velocity
+
+**Keyword:** `changeVelocity`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| x | Number | Velocity on X axis |
+| y | Number | Velocity on Y axis |
+| z | Number | Velocity on Z axis |
+
+**Syntax**
+
+```
+changeVelocity <x> <y> <z>
+```
+
+
+***
+
+
+## Launch to Target
+
+**Keyword:** `launchTarget`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| location | String | The type of location (`house_spawn`, `current_location`, `invokers_location`, or `custom_coordinates "x y z"`)  |
+| strength | Float | Launch strength |
+
+**Syntax**
+
+```
+launchTarget <location> <coordinates> <strength>
+```
+
+
+***
+
+
+## Set Player Weather
+
+**Keyword:** `playerWeather`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| weather | String | The weather type (`Sunny`, ...) |
+
+**Syntax**
+
+```
+playerWeather <weather>
+```
+
+
+***
+
+
+## Set Player Time
+
+**Keyword:** `playerTime`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| time | Integer | The time value |
+
+**Syntax**
+
+```
+playerTime <time>
+```
+
+
+***
+
+
+## Toggle Nametag Display
+
+**Keyword:** `displayNametag`
+
+**Parameters**
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| visible | Boolean | Whether the nametag is visible |
+
+**Syntax**
+
+```
+displayNametag <visible>
 ```
 
 
