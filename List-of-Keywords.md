@@ -255,6 +255,33 @@ closeMenu
 ***
 
 
+## Conditional
+
+**Keyword:** `if`
+
+#### Parameters
+
+| Parameter | Type | Description |
+| --------- | ---- | ------------|
+| or | String/Boolean | `true` or `or` for OR mode, `false` or `and` or omitted for AND mode. |
+| conditions | String | A list of conditions, comma separated (optional) |
+| if_actions | Actions | A list of actions to execute if true, line separated |
+| else_actions | Actions | A list of actions to execute if false, line separated |
+
+#### Syntax
+
+```
+if <or> (<conditions>) {
+    <if_actions>
+} else {
+    <else_actions>
+}
+```
+
+
+***
+
+
 ## Display Action Bar
 
 **Keyword:** `actionBar`
