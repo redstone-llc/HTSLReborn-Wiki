@@ -18,10 +18,6 @@ Either `true` or `false`
 
 An HTSL action
 
-## Item Path
-
-A path to an item's NBT file. This is relative to the script file. Preferably surround in quotes, especially if it includes a space.
-
 ## Assignment Operator
 
 One of the following:
