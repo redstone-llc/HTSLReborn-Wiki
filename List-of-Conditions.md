@@ -6,8 +6,8 @@
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| block | String | Path to the block's NBT file |
-| match_type_only | Boolean | Whether to match only the block type |
+| block | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Path to the block's NBT file |
+| match_type_only | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Whether to match only the block type |
 
 **Syntax**
 
@@ -28,7 +28,7 @@ blockType <item> <match_type_only>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Number | The damage value |
+| value | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | The damage value |
 
 **Syntax**
 
@@ -48,7 +48,7 @@ damageAmount <operator> <value>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| cause | String | The cause of damage (`Poison`, etc.) |
+| cause | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | The cause of damage (`Poison`, etc.) |
 
 **Syntax**
 
@@ -82,7 +82,7 @@ doingParkour
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| environment | String | The fishing environment type (`Water` or `Lava`) |
+| environment | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | The fishing environment type (`Water` or `Lava`) |
 
 **Syntax**
 
@@ -102,10 +102,10 @@ fishingEnv <environment>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | The global variable name |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | The global variable name |
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Value | Value to compare against |
-| fallback | Value | Default value if unset |
+| value | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Value to compare against |
+| fallback | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Default value if unset |
 
 **Syntax**
 
@@ -125,10 +125,10 @@ globalvar <identifier> <operator> <value> <fallback>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| item | String | Path to the item's NBT file |
-| mode | String | Matching mode (`metadata`, `type`, etc.) |
-| slot | String | Inventory slot |
-| amount | String | Required amount |
+| item | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Path to the item's NBT file |
+| mode | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Matching mode (`metadata`, `type`, etc.) |
+| slot | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Inventory slot |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Required amount |
 
 **Syntax**
 
@@ -148,7 +148,7 @@ hasItem <item> <mode> <slot> <amount>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| effect | String | The potion effect |
+| effect | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | The potion effect |
 
 **Syntax**
 
@@ -168,10 +168,10 @@ hasPotion <effect>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| item | String | Path to the item's NBT file |
-| mode | String | Matching mode (`metadata`, `type`, etc.) |
-| slot | String | Inventory slot |
-| amount | String | Required amount |
+| item | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Path to the item's NBT file |
+| mode | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Matching mode (`metadata`, `type`, etc.) |
+| slot | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Inventory slot |
+| amount | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Required amount |
 
 **Syntax**
 
@@ -206,7 +206,7 @@ isSneaking
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Number | Health value |
+| value | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Health value |
 
 **Syntax**
 
@@ -226,9 +226,9 @@ maxHealth <operator> <value>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| placeholder | String | A placeholder |
+| placeholder | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | A placeholder |
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Number | Value to compare |
+| value | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Value to compare against |
 
 **Syntax**
 
@@ -263,7 +263,7 @@ isFlying
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Number | Health value |
+| value | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Health value |
 
 **Syntax**
 
@@ -284,7 +284,7 @@ health <operator> <value>
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Number | Hunger value |
+| value | [Number](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#number) | Hunger value |
 
 **Syntax**
 
@@ -304,10 +304,10 @@ hunger <operator> <value>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | Variable name |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Variable name |
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Value | Value to compare |
-| fallback | Value | Default value if unset |
+| value | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Value to compare against |
+| fallback | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Default value if unset |
 
 **Syntax**
 
@@ -327,7 +327,7 @@ var <identifier> <operator> <value> <fallback>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| type | String | Portal type (`End Portal` or `Nether Portal`) |
+| type | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Portal type (`End Portal` or `Nether Portal`) |
 
 **Syntax**
 
@@ -361,7 +361,7 @@ canPvp
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| mode | String | Required gamemode (`Creative`, `Survival`, or `Adventure`) |
+| mode | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Required gamemode (`Creative`, `Survival`, or `Adventure`) |
 
 **Syntax**
 
@@ -381,8 +381,8 @@ gamemode <mode>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| group | String | Group name |
-| include_higher | Boolean | Include higher priority groups |
+| group | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Group name |
+| include_higher | [Boolean](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#boolean) | Include higher priority groups |
 
 **Syntax**
 
@@ -402,7 +402,7 @@ hasGroup <group> <include_higher>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| permission | String | Permission name (`Fly`, etc.) |
+| permission | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Permission name (`Fly`, etc.) |
 
 **Syntax**
 
@@ -422,7 +422,7 @@ hasPermission <permission>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| team | String | Team name |
+| team | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Team name |
 
 **Syntax**
 
@@ -442,11 +442,11 @@ hasTeam <team>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| identifier | String | Variable name |
-| team | String | Team name |
+| identifier | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Variable name |
+| team | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Team name |
 | operator | [Conditional Operator](https://github.com/redstone-llc/HTSLReborn/wiki/List-of-Parameter-Types#conditional-operator) | The method of comparison |
-| value | Value | Value to compare |
-| fallback | Value | Default value if unset |
+| value | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Value to compare against |
+| fallback | [Value](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#value) | Default value if unset |
 
 **Syntax**
 
@@ -466,7 +466,7 @@ teamvar <identifier> <team> <operator> <value> <fallback>
 
 | Parameter | Type | Description |
 | --------- | ---- | ------------|
-| region | String | Region name |
+| region | [String](https://github.com/redstone-llc/HTSLReborn-Wiki/blob/main/List-of-Parameter-Types.md#string) | Region name |
 
 **Syntax**
 
