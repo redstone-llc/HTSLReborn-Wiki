@@ -4,7 +4,7 @@ A collection of characters. If the value includes a space, use quotes around the
 
 ## Number
 
-A number. Can always be a whole number (suffix `W`, can sometimes be a decimal number (suffix `D`) depending on the action/parameter. 
+A number. Can always be a whole number (suffix `L`, can sometimes be a decimal number (suffix `D`) depending on the action/parameter. 
 
 ## Value
 
